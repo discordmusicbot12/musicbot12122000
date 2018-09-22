@@ -28,3 +28,10 @@ client.user.setGame(`Music Bot`,"http://twitch.tv/S-F")
 });
 
 client.login(process.env.BOT_TOKEN);
+
+
+
+
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","Righteous"));
+    });
